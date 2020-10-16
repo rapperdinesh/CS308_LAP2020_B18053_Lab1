@@ -1,6 +1,6 @@
 /* This program computes the square root of a
 positive number. */
-
+#include <complex.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
@@ -20,14 +20,24 @@ int main(int argc, char* argv[]) {
 
 	int input = atoi(argv[1]);
 
-	int num_less,num_greater;
-	num_less = floor(input);
-	num_greater = ceil(input);
+	if(input<0){
 
-if(num_less == num_greater){
-	printf("Sqrt of %d is %f\n",input,sqrt(input));
-	printf("End of program. Exiting.\n");
-	return(0);
-}
+			printf("Sqrt of %d is %fi\n",input,sqrt(-1*input));
+
+    	return(0);
+	}
+
+	else{
+
+		int num_less,num_greater;
+		num_less = floor(input);
+		num_greater = ceil(input);
+
+		if(num_less == num_greater){
+			printf("Sqrt of %d is %f\n",input,sqrt(input));
+			printf("End of program. Exiting.\n");
+		}
+	}
+return(0);
 
 } // end main
