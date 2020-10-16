@@ -14,7 +14,7 @@ int main(int argc, char* argv[]) {
 
 
 	if (argc != 2) {
-		printf("Usage: sqrt input\n\n");
+		printf("NEGSUPPORT:Usage: sqrt input\n\n");
 		exit(-1);
 	}
 
@@ -22,7 +22,7 @@ int main(int argc, char* argv[]) {
 
 	if(input<0){
 
-			printf("Sqrt of %d is %fi\n",input,sqrt(-1*input));
+			printf("NEGSUPPORT:Sqrt of %d is %fi\n",input,sqrt(-1*input));
 
     	return(0);
 	}
@@ -34,8 +34,8 @@ int main(int argc, char* argv[]) {
 		num_greater = ceil(input);
 
 		if(num_less == num_greater){
-			printf("Sqrt of %d is %f\n",input,sqrt(input));
-			printf("End of program. Exiting.\n");
+			printf("NEGSUPPORT:Sqrt of %d is %f\n",input,sqrt(input));
+			printf("NEGSUPPORT:End of program. Exiting.\n");
 		}
 	}
 return(0);
